@@ -51,8 +51,8 @@ The components should allow use of Tailwind's Headless UI components.
 
 ## Footnote editor
 
-A footnote editor RCL. This will require the "Partial USFM" mode listed as a separate task. It will provide appropriate tags and rendering.
-TODO: flesh this out
+A footnote editor RCL. This will require the "Partial USFM" mode listed as a separate task. It will provide appropriate toolbar, tags, and rendering.
+TODO: flesh this task out further.
 
 ## Inline components
 
