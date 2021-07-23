@@ -6,7 +6,7 @@ This document **draft** describes planned software changes to improve the [USFM 
 
 # Version 0.10 plans
 
-## ➖ Partial USFM 
+## ➖ Partial USFM (a.k.a. "chunk" or "block" or "snippet" mode)
 
 The editor should be able to display partial USFM when in read-only mode. This will allow the application to omit headers or chapter markers when displaying snippets.
 
@@ -24,6 +24,8 @@ The list of supported formatting tags will be expanded to include the following 
 2. Paragraph (\p)
 3. Name of Deity (\nd ..\nd\*)
 4. Words of Jesus (\wj .. \wj\*)
+5. Selah (\qs ... \qs\*)
+6. Inscriptions (\pc and/or \qc)
 
 ## ➖ Versions and compatibility
 
@@ -39,11 +41,26 @@ The editor should function under current versions of Chrome, Safari, and Firefox
 ## ➖ Web development frameworks
 
 #### Next.js
-The editor should function in a Next.js project with Tailwind CSS styling.
+The editor should function in a Next.js project.
 
 #### Tailwind CSS
 The components should allow CSS styling with Tailwind CSS classes.
 
-#### Tailwind UI
-The components should allow use of Tailwind UI widgets.
+#### Tailwind's Headless UI
+The components should allow use of Tailwind's Headless UI components.
+
+## Footnote editor
+
+A footnote editor RCL. This will require the "Partial USFM" mode listed as a separate task. It will provide appropriate tags and rendering.
+TODO: flesh this out
+
+## Inline components
+
+The application may provide arbitrary components to be inserted at any verse.
+
+For example, if a translator's comment has been left for a verse, the application may choose to provide an icon indicator that will fire an action for the application to display the comment. The editor will render this component inline at the end (beginning?) of the verse text.
+
+## Interlinear components
+
+Investigate whether interlinear (between the lines of text) components are feasible, and advise. Potential uses are comment snippets, footnotes, and cross-references.
 
