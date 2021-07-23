@@ -51,7 +51,7 @@ The components should allow use of Tailwind's Headless UI components.
 
 ## Footnote editor
 
-A footnote editor RCL. This will require the "Partial USFM" mode listed as a separate task. It will provide appropriate toolbar, tags, and rendering.
+A footnote editor RCL. This will require the "Partial USFM" and "Inline components" tasks (also in this document). It will provide appropriate toolbar, tags, and rendering.
 TODO: flesh this task out further.
 
 ## Inline components
@@ -62,5 +62,5 @@ For example, if a translator's comment has been left for a verse, the applicatio
 
 ## Interlinear components
 
-Investigate whether interlinear (between the lines of text) components are feasible, and advise. Potential uses are comment snippets, footnotes, and cross-references.
+As an alternative to Inline Components, investigate whether interlinear (between the lines of text) components are feasible, and advise. Potential uses are comment snippets, footnotes, and cross-references.
 
