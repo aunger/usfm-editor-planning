@@ -6,9 +6,9 @@ This document **draft** describes planned software changes to improve the [USFM 
 
 # Version 0.10 plans
 
-## ➖ Partial USFM (a.k.a. "chunk" or "block" or "snippet" mode)
+## ➖ Partial USFM 
 
-The editor should be able to display partial USFM when in read-only mode. This will allow the application to omit headers or chapter markers when displaying snippets.
+This may be known as "chunk" or "block" or "snippet" mode. The editor should be able to display partial USFM when in read-only mode. This will allow the application to omit headers or chapter markers when displaying snippets.
 
 ## ➖ Search 
 
@@ -40,27 +40,39 @@ The editor should function under current versions of Chrome, Safari, and Firefox
 
 ## ➖ Web development frameworks
 
-#### Next.js
+#### ➖ Next.js
 The editor should function in a Next.js project.
 
-#### Tailwind CSS
+#### ➖ Tailwind CSS
 The components should allow CSS styling with Tailwind CSS classes.
 
-#### Tailwind's Headless UI
+#### ➖ Tailwind's Headless UI
 The components should allow use of Tailwind's Headless UI components.
 
-## Footnote editor
+## ➖ Footnote editor
 
-A footnote editor RCL. This will require the "Partial USFM" and "Inline components" tasks (also in this document). It will provide appropriate toolbar, tags, and rendering.
+A footnote editor RCL. This will require the [Partial USFM](#-partial-usfm) and [Inline components](#-inline-components) tasks. It will provide appropriate toolbar, tags, and rendering.
 TODO: flesh this task out further.
 
-## Inline components
+## ➖ Inline components
 
 The application may provide arbitrary components to be inserted at any verse.
 
 For example, if a translator's comment has been left for a verse, the application may choose to provide an icon indicator that will fire an action for the application to display the comment. The editor will render this component inline at the end (beginning?) of the verse text.
 
-## Interlinear components
 
-As an alternative to Inline Components, investigate whether interlinear (between the lines of text) components are feasible, and advise. Potential uses are comment snippets, footnotes, and cross-references.
+# Explorations / spikes
 
+These aren't really features, but tasks to think about features.
+
+## ➖ Interlinear components
+
+As an alternative to [Inline components](#-inline-components), investigate whether interlinear (between the lines of text) components are feasible, and advise. Potential uses are comment snippets, footnotes, and cross-references.
+
+## ➖ Suggestion API
+
+Consider how a suggested text generator might be integrated.
+
+## ➖ Squiggly lines
+
+Consider how a checker might be integrated with the Editor.
