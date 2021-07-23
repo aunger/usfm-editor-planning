@@ -6,6 +6,10 @@ This document **draft** describes planned software changes to improve the [USFM 
 
 # Version 0.10 plans
 
+## ➖ Partial USFM 
+
+The editor should be able to display partial USFM when in read-only mode. This will allow the application to omit headers or chapter markers when displaying snippets.
+
 ## ➖ Search 
 
 To support search features in the containing application, the editor should provide highlighting of a given search term. Search terms will be literal (no fuzzy search or wildcards) and will be passed in as a React prop. Instances of the search term will be highlighted in the editor if they are visible, but the editor need not scroll to bring them into view.
